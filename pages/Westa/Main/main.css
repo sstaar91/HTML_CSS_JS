@@ -38,12 +38,12 @@ body {
 }
 
 .searchBar {
-  width: 100%;
   padding: 7px 10px;
+  width: 100%;
+  text-align: center;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
   background-color: #fafafa;
-  text-align: center;
   font-size: 15px;
   color: #d3d3d3;
 }
@@ -196,6 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 
 .sectionInner p:last-child {
@@ -225,6 +226,11 @@ body {
 
 .contentHeader p:first-child {
   color: #c1c1c1;
+  cursor: default;
+}
+
+.contentHeader p:last-child {
+  cursor: pointer;
 }
 
 .contentWrapper .sectionWrapper {

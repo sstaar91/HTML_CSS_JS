@@ -5,7 +5,8 @@ const submit = document.getElementById("submit");
 
 function checkInput(e) {
   e.preventDefault();
-  if (!input.value.length) {
+
+  if (input.value.length === 0) {
     alert("댓글을 입력하세요!");
   } else {
     registerComment(input.value);
@@ -15,7 +16,7 @@ function checkInput(e) {
 function registerComment(value) {
   const commentLists = document.getElementById("commentLists");
   const newCommentList = document.createElement("li");
-  const newComment = `<span class="name">we-dohyeon</span><span>${value}</span><span class="delete">x</span>`;
+  const newComment = `<span class="name">mx_star</span><span>${value}</span><span class="delete">x</span>`;
   newCommentList.innerHTML = newComment;
 
   // 풀어서 사용하기
@@ -23,7 +24,7 @@ function registerComment(value) {
   // const newCommentText = document.createElement("span");
   // const newCommentDelete = document.createElement("span");
 
-  // newCommentAuthor.classList.add("name");
+  // newCommentAuthor.classList.add("userName");
   // newCommentDelete.classList.add("delete");
 
   // newCommentAuthor.innerText = "user";
@@ -34,10 +35,9 @@ function registerComment(value) {
   // newCommentList.appendChild(newCommentText);
   // newCommentList.appendChild(newCommentDelete);
 
-  // 삭제
-  // makeDeleteEvent(newCommentList);
+    
+  makeDeleteEvent(newCommentList);
   commentLists.appendChild(newCommentList);
-
   input.value = "";
 }
 
