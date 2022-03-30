@@ -1,0 +1,73 @@
+.exampleWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.borderBox {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 10px solid red;
+}
+
+.contentBox {
+  box-sizing: content-box;
+  width: 100px;
+  height: 100px;
+  border: 10px solid blue;
+}
+
+span {
+  color: red;
+  font-size: 20px;
+}
+
+#cssCheck {
+  color: blue;
+  font-size: 20px;
+}
+
+.cssCheck {
+  color: green;
+  font-size: 20px;
+}
+
+.positionWrap {
+  height: 100vh;
+}
+
+.positionBox {
+  position: relative;
+  margin: 30px auto;
+  width: 600px;
+  height: 2000px;
+  border: 3px solid black;
+}
+
+.absolutePosition {
+  position: absolute;
+  top:0;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+}
+
+.relativePosition {
+  position: relative;
+  top:0;
+  left: 110px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid blue;
+}
+
+.fixedPosition {
+  position: fixed;
+  top:0;
+  left: 220px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+}
