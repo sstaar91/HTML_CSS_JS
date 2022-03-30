@@ -1,41 +1,87 @@
 body {
+  height: 100vh;
+
+  /* 가운데 정렬 1번 */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+
+  /* 가운데 정렬 2번 */
+  /* display: grid;
+  place-items: center; */
+
+  /* 가운데 정렬 3번 */
+  /* position: relative; */
 }
 
 .weegleContainer {
+  /* 가운데 정렬 3번 */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+img {
+  width: 700px;
 }
 
 .inputWrap {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+
+
+.fa-solid {
+  flex: 1;
 }
 
 input {
-  position: absolute;
-  padding: 5px 80px 5px 50px;
-  width: 100%;
-  height: 40px;
-  border: 0.2px solid lightgray;
-  border-radius: 15px;
-}
-
-.fa-magnifying-glass {
-  position: absolute;
-  top: 12px;
-  left: 20px;
-}
-
-.fa-keyboard {
-  position: absolute;
-  right: 50px;
-  top: 12px;
+  flex: 7;
+  height: 30px;
+  border: none;
+  outline: none;
 }
 
 .fa-microphone {
-  position: absolute;
-  right: 20px;
-  top: 12px;
+  color: #0a8dff;
 }
+
+.buttonWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.buttonItem {
+  padding: 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.serviceWrap {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* .changeLanguage {
+  text-decoration-line: none;
+}
+
+.changeLanguage:link {
+  color:black;
+}
+
+.changeLanguage:visited {
+  color:black;
+} */
