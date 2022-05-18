@@ -1,25 +1,8 @@
 body {
-  height: 100vh;
-
-  /* 가운데 정렬 1번 */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* 가운데 정렬 2번 */
-  /* display: grid;
-  place-items: center; */
-
-  /* 가운데 정렬 3번 */
-  /* position: relative; */
-}
-
-.weegleContainer {
-  /* 가운데 정렬 3번 */
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  height: 100vh;
 }
 
 img {
@@ -67,6 +50,10 @@ input {
   cursor: pointer;
 }
 
+.colorPick {
+  color: green;
+}
+
 .serviceWrap {
   text-align: center;
   margin-top: 20px;
@@ -77,9 +64,9 @@ input {
 }
 
 .changeLanguage:link {
-  color:black;
+  color: black;
 }
 
 .changeLanguage:visited {
-  color:red;
+  color: red;
 }

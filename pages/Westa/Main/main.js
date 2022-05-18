@@ -19,23 +19,6 @@ function registerComment(value) {
   const newComment = `<span class="name">mx_star</span><span>${value}</span><span class="delete">x</span>`;
   newCommentList.innerHTML = newComment;
 
-  // 풀어서 사용하기
-  // const newCommentAuthor = document.createElement("span");
-  // const newCommentText = document.createElement("span");
-  // const newCommentDelete = document.createElement("span");
-
-  // newCommentAuthor.classList.add("userName");
-  // newCommentDelete.classList.add("delete");
-
-  // newCommentAuthor.innerText = "user";
-  // newCommentText.innerText = value;
-  // newCommentDelete.innerText = "x";
-
-  // newCommentList.appendChild(newCommentAuthor);
-  // newCommentList.appendChild(newCommentText);
-  // newCommentList.appendChild(newCommentDelete);
-
-    
   makeDeleteEvent(newCommentList);
   commentLists.appendChild(newCommentList);
   input.value = "";
@@ -50,8 +33,4 @@ function deleteComment(newCommentList) {
   newCommentList.remove();
 }
 
-const init = () => {
-  submit.addEventListener("click", checkInput);
-};
-
-init();
+submit.addEventListener("click", checkInput);
